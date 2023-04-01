@@ -15,7 +15,10 @@
 
 <script lang="ts">
 	import { forkSeed, fromSeed } from '@utils/Random';
-	import { UilAngry, UilConfused, UilCornerDownLeft, UilSmileBeam } from 'svelte-unicons';
+	import UilAngry from 'svelte-unicons/src/icons/UilAngry.svelte';
+	import UilConfused from 'svelte-unicons/src/icons/UilConfused.svelte';
+	import UilCornerDownLeft from 'svelte-unicons/src/icons/UilCornerDownLeft.svelte';
+	import UilSmileBeam from 'svelte-unicons/src/icons/UilSmileBeam.svelte';
 	import ProceduralAvatar from '../components/ProceduralAvatar.svelte';
 	import Skeleton from '../components/Skeleton.svelte';
 	import ZText from '../components/ZText.svelte';

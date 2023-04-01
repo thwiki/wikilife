@@ -16,7 +16,8 @@
 
 <script lang="ts">
 	import { forkSeed, fromSeed } from '@utils/Random';
-	import { UilAngry, UilSmile } from 'svelte-unicons';
+	import UilAngry from 'svelte-unicons/src/icons/UilAngry.svelte';
+	import UilSmile from 'svelte-unicons/src/icons/UilSmile.svelte';
 	import Badge from '../components/Badge.svelte';
 	import ProceduralAvatar from '../components/ProceduralAvatar.svelte';
 	import ZText from '../components/ZText.svelte';

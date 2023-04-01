@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { createEventDispatcher, type ComponentProps } from 'svelte';
-	import { UilRedo, UilSave } from 'svelte-unicons';
+	import UilRedo from 'svelte-unicons/src/icons/UilRedo.svelte';
+	import UilSave from 'svelte-unicons/src/icons/UilSave.svelte';
 	import Button from '../components/Button.svelte';
 	import type { TaskModel } from '../tasks';
 	import LangText from './LangText.svelte';

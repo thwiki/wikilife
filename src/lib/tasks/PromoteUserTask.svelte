@@ -99,7 +99,10 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilAngry, UilCheck, UilMultiply, UilSmile } from 'svelte-unicons';
+	import UilAngry from 'svelte-unicons/src/icons/UilAngry.svelte';
+	import UilCheck from 'svelte-unicons/src/icons/UilCheck.svelte';
+	import UilMultiply from 'svelte-unicons/src/icons/UilMultiply.svelte';
+	import UilSmile from 'svelte-unicons/src/icons/UilSmile.svelte';
 
 	export let task: PromoteUserTaskModel;
 

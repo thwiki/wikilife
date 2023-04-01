@@ -119,7 +119,8 @@
 <script lang="ts">
 	import { ClickOutside } from '@utils/ClickOutside';
 	import { getContext } from 'svelte';
-	import { UilClipboard, UilDiary } from 'svelte-unicons';
+	import UilClipboard from 'svelte-unicons/src/icons/UilClipboard.svelte';
+	import UilDiary from 'svelte-unicons/src/icons/UilDiary.svelte';
 	import { get } from 'svelte/store';
 	import { fade } from 'svelte/transition';
 	import { Svroller } from 'svrollbar';

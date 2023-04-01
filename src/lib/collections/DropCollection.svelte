@@ -2,7 +2,7 @@
 	import Collection from '@collections/Collection.svelte';
 	import type Sortable from 'sortablejs';
 	import type { ComponentProps } from 'svelte';
-	import { UilFileUpload } from 'svelte-unicons';
+	import UilFileUpload from 'svelte-unicons/src/icons/UilFileUpload.svelte';
 	import InfoBlock from '../blocks/InfoBlock.svelte';
 	import LangText from '../components/LangText.svelte';
 

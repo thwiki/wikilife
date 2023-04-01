@@ -16,7 +16,8 @@
 
 <script lang="ts">
 	import { forkSeed, fromSeed } from '@utils/Random';
-	import { UilThumbsDown, UilThumbsUp } from 'svelte-unicons';
+	import UilThumbsDown from 'svelte-unicons/src/icons/UilThumbsDown.svelte';
+	import UilThumbsUp from 'svelte-unicons/src/icons/UilThumbsUp.svelte';
 	import ProceduralAvatar from '../components/ProceduralAvatar.svelte';
 	import Skeleton from '../components/Skeleton.svelte';
 	import ZText from '../components/ZText.svelte';

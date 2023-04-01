@@ -71,7 +71,7 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilTrashAlt } from 'svelte-unicons';
+	import UilTrashAlt from 'svelte-unicons/src/icons/UilTrashAlt.svelte';
 	import CenterList from '../collections/CenterList.svelte';
 	import DemoList from '../collections/DemoList.svelte';
 	import ZText from '../components/ZText.svelte';

@@ -31,7 +31,7 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilWrench } from 'svelte-unicons';
+	import UilWrench from 'svelte-unicons/src/icons/UilWrench.svelte';
 	import CenterList from '../collections/CenterList.svelte';
 
 	export let task: RunJobTaskModel;

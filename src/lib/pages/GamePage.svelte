@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import { UilLineAlt } from 'svelte-unicons';
+	import UilLineAlt from 'svelte-unicons/src/icons/UilLineAlt.svelte';
 	import { Levels, type AppState, type GameModel } from '../../Game.svelte';
 	import badgesPng from '../assets/images/badges.png';
 	import gameBgAvif from '../assets/images/game-bg.avif';

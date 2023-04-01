@@ -72,7 +72,7 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilUpload } from 'svelte-unicons';
+	import UilUpload from 'svelte-unicons/src/icons/UilUpload.svelte';
 
 	export let task: UploadCoverTaskModel;
 

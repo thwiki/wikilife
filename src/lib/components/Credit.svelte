@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ClickOutside } from '@utils/ClickOutside';
-	import { UilAt, UilGithub } from 'svelte-unicons';
+	import UilAt from 'svelte-unicons/src/icons/UilAt.svelte';
+	import UilGithub from 'svelte-unicons/src/icons/UilGithub.svelte';
 	import { fade } from 'svelte/transition';
 	import LangText from './LangText.svelte';
 

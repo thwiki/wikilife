@@ -81,7 +81,7 @@
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
 	import { getContext } from 'svelte';
-	import { UilMessage } from 'svelte-unicons';
+	import UilMessage from 'svelte-unicons/src/icons/UilMessage.svelte';
 	import type { AppState } from '../../Game.svelte';
 	import DemoCollection from '../collections/DemoCollection.svelte';
 	import EditorCollection from '../collections/EditorCollection.svelte';

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { UilSpinnerAlt } from 'svelte-unicons';
+	import UilSpinnerAlt from 'svelte-unicons/src/icons/UilSpinnerAlt.svelte';
 
 	let className: string = undefined;
 

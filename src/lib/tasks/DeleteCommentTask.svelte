@@ -75,7 +75,9 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilThumbsDown, UilThumbsUp, UilTrashAlt } from 'svelte-unicons';
+	import UilThumbsDown from 'svelte-unicons/src/icons/UilThumbsDown.svelte';
+	import UilThumbsUp from 'svelte-unicons/src/icons/UilThumbsUp.svelte';
+	import UilTrashAlt from 'svelte-unicons/src/icons/UilTrashAlt.svelte';
 	import CenterList from '../collections/CenterList.svelte';
 	import DemoList from '../collections/DemoList.svelte';
 

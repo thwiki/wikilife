@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { ClickOutside } from '@utils/ClickOutside';
 	import type { ColorName } from '@utils/Colors';
-	import { UilQuestion } from 'svelte-unicons';
+	import UilQuestion from 'svelte-unicons/src/icons/UilQuestion.svelte';
 	import { fade } from 'svelte/transition';
 
 	export let color: ColorName = undefined;

@@ -66,7 +66,8 @@
 	import EditorBar from '@components/EditorBar.svelte';
 	import LangText from '@components/LangText.svelte';
 	import Window from '@components/Window.svelte';
-	import { UilCheck, UilSmileBeam } from 'svelte-unicons';
+	import UilCheck from 'svelte-unicons/src/icons/UilCheck.svelte';
+	import UilSmileBeam from 'svelte-unicons/src/icons/UilSmileBeam.svelte';
 
 	export let task: CloseTalkTaskModel;
 
