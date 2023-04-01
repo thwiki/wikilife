@@ -1,0 +1,171 @@
+/* Write your global styles here, in PostCSS syntax */
+
+@tailwind base;
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light;
+	background-color: #242424;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	--svrollbar-track-width: 1rem;
+	--svrollbar-track-opacity: 0.5;
+	--svrollbar-track-radius: 9999px;
+	--svrollbar-thumb-width: 1rem;
+	--svrollbar-thumb-opacity: 0.5;
+	--svrollbar-thumb-radius: 9999px;
+}
+
+@font-face {
+	font-display: auto;
+	font-family: 'i18n-zh';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/zh.woff2') format('woff2'), url('/assets/fonts/zh.woff') format('woff'),
+		url('/assets/fonts/zh.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: auto;
+	font-family: 'i18n-en';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/en.woff2') format('woff2'), url('/assets/fonts/en.woff') format('woff'),
+		url('/assets/fonts/en.ttf') format('truetype');
+}
+
+@font-face {
+	font-display: auto;
+	font-family: 'i18n-zs';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/assets/fonts/zs.woff2') format('woff2'), url('/assets/fonts/zs.woff') format('woff'),
+		url('/assets/fonts/zs.ttf') format('truetype');
+}
+
+:lang(zh) {
+	font-family: i18n-zh;
+}
+:lang(en) {
+	font-family: i18n-en;
+}
+:lang(zs) {
+	font-family: i18n-zs;
+}
+
+* {
+	overscroll-behavior-y: none;
+}
+
+a {
+	font-weight: 500;
+	color: #646cff;
+	text-decoration: inherit;
+}
+a:hover {
+	color: #535bf2;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	border: none;
+	-ms-scroll-chaining: none;
+	overscroll-behavior: none;
+	overflow: hidden;
+	touch-action: manipulation;
+	-webkit-user-drag: none;
+}
+
+html {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	user-select: none;
+}
+
+body,
+#app {
+	width: 100%;
+	height: 100%;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.bg-stripes-x-gray {
+	background-color: #9ca3af1a;
+	background-image: linear-gradient(
+		0deg,
+		#6b7280a1 20%,
+		transparent 0,
+		transparent 50%,
+		#6b7280a1 0,
+		#6b7280a1 70%,
+		transparent 0,
+		transparent
+	);
+	background-size: 1rem 1rem;
+}
+
+.bg-stripes-y-gray {
+	background-color: #9ca3af1a;
+	background-image: linear-gradient(
+		90deg,
+		#6b7280a1 20%,
+		transparent 0,
+		transparent 50%,
+		#6b7280a1 0,
+		#6b7280a1 70%,
+		transparent 0,
+		transparent
+	);
+	background-size: 1rem 1rem;
+}
+
+.selectable {
+	position: relative;
+	transition-property: theme('transitionProperty.colors');
+	transition-timing-function: theme('transitionTimingFunction.DEFAULT');
+	transition-duration: theme('transitionDuration.150');
+}
+
+.selectable::before {
+	content: var(--tw-content);
+	display: block;
+	position: absolute;
+	content: var(--tw-content);
+	top: -0.25rem;
+	right: -0.25rem;
+	bottom: -0.25rem;
+	left: -0.25rem;
+	background-color: theme('colors.red.500');
+	opacity: theme('opacity.30');
+	--tw-scale-x: 0;
+	transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x))
+		skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+	transform-origin: theme('transformOrigin.left');
+	transition-property: theme('transitionProperty.transform');
+	transition-timing-function: theme('transitionTimingFunction.DEFAULT');
+	transition-duration: theme('transitionDuration.200');
+	pointer-events: none;
+}
+
+.selectable-selected {
+	border-color: theme('colors.red.400');
+}
+
+.selectable-selected::before {
+	--tw-scale-x: 100%;
+}
