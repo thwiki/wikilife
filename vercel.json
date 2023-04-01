@@ -1,0 +1,30 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"github": {
+		"silent": true
+	},
+	"headers": [
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "X-Content-Type-Options",
+					"value": "nosniff"
+				},
+				{
+					"key": "Referrer-Policy",
+					"value": "same-origin"
+				}
+			]
+		},
+		{
+			"source": "/(.*)\\.(html)",
+			"headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+		},
+		{
+			"source": "/(.*)\\.(js|css|jpg|png|avif|ttf|woff|woff2)",
+			"headers": [{ "key": "Cache-Control", "value": "public, max-age=31556952, s-maxage=31556952, immutable" }]
+		}
+	],
+	"trailingSlash": false
+}
