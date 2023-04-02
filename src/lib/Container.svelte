@@ -47,11 +47,7 @@
 				</button>
 				{#if OnlineMode}
 					{#if loaded && save.username === ''}
-						<a
-							href="https://thwiki.cc/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
+						<a href="https://thwiki.cc/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95" rel="noopener noreferrer">
 							<div
 								class="flex items-center justify-center select-none absolute bg-gradient-to-r from-transparent via-black/80 w-full py-1 px-2 text-center top-[664px] z-80 text-3xl leading-none transition-colors"
 							>
@@ -60,7 +56,7 @@
 						</a>
 					{/if}
 				{:else}
-					<a href="https://thwiki.cc/wikilife.html" target="_blank" rel="noopener noreferrer">
+					<a href="https://thwiki.cc/wikilife.html" rel="noopener noreferrer">
 						<div
 							class="flex items-center justify-center select-none absolute bg-gradient-to-r from-transparent via-black/80 w-full py-1 px-2 text-center top-[664px] z-80 text-3xl leading-none transition-colors"
 						>
