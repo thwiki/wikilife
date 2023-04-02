@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
 	import { writable } from 'svelte/store';
-	import CenterSpinner from './lib/components/CenterSpinner.svelte';
-	import Credit from './lib/components/Credit.svelte';
-	import LangSwitcher from './lib/components/LangSwitcher.svelte';
-	import LangText from './lib/components/LangText.svelte';
-	import StartPage from './lib/pages/StartPage.svelte';
+	import CenterSpinner from './components/CenterSpinner.svelte';
+	import Credit from './components/Credit.svelte';
+	import LangSwitcher from './components/LangSwitcher.svelte';
+	import LangText from './components/LangText.svelte';
+	import StartPage from './pages/StartPage.svelte';
 
+	import { OnlineMode } from '../utils/Env';
 	import LoadSave, { AppStateSave, type AppStateSaveDto } from './LoadSave.svelte';
-	import { OnlineMode } from './utils/Env';
 
 	setContext('lang', writable<'zh' | 'en'>('zh'));
 
@@ -45,16 +45,26 @@
 						<CenterSpinner class="text-slate-100" />
 					{/if}
 				</button>
-				{#if loaded && OnlineMode && save.username === ''}
-					<a
-						href="https://thwiki.cc/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<div
-							class="flex items-center justify-center select-none absolute bg-gradient-to-r from-transparent via-black/70 w-full py-1 px-2 text-center top-[664px] z-80 text-3xl leading-none transition-colors"
+				{#if OnlineMode}
+					{#if loaded && save.username === ''}
+						<a
+							href="https://thwiki.cc/index.php?title=%E7%89%B9%E6%AE%8A:%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<LangText key="login" />
+							<div
+								class="flex items-center justify-center select-none absolute bg-gradient-to-r from-transparent via-black/80 w-full py-1 px-2 text-center top-[664px] z-80 text-3xl leading-none transition-colors"
+							>
+								<LangText key="login" />
+							</div>
+						</a>
+					{/if}
+				{:else}
+					<a href="https://thwiki.cc/wikilife.html" target="_blank" rel="noopener noreferrer">
+						<div
+							class="flex items-center justify-center select-none absolute bg-gradient-to-r from-transparent via-black/80 w-full py-1 px-2 text-center top-[664px] z-80 text-3xl leading-none transition-colors"
+						>
+							<LangText key="import-save" />
 						</div>
 					</a>
 				{/if}

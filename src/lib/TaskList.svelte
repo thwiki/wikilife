@@ -1,7 +1,7 @@
 <script lang="ts" context="module">
 	import { forkSeed, fromSeed } from '@utils/Random';
 	import type { Random } from 'random';
-	import { Levels, type Level } from '../Game.svelte';
+	import { Levels, type Level } from './Game.svelte';
 
 	import { TaskModels, type TaskModel } from './tasks';
 
@@ -124,8 +124,8 @@
 	import { get } from 'svelte/store';
 	import { fade } from 'svelte/transition';
 	import { Svroller } from 'svrollbar';
-	import type { AppState } from '../Game.svelte';
 	import LangText from './components/LangText.svelte';
+	import type { AppState } from './Game.svelte';
 	import ScorePopup from './popups/ScorePopup.svelte';
 	import TaskListItem from './TaskListItem.svelte';
 

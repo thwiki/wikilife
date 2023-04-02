@@ -74,6 +74,11 @@ export const i18n = {
 		"en": "Login to Claim Achievements",
 		"zs": ""
 	},
+	"import-save": {
+		"zh": "按此继续愚人节当天存档",
+		"en": "Click Here to Continue from April Fools Day Save",
+		"zs": ""
+	},
 	"start": {
 		"zh": "开始",
 		"en": "Start",

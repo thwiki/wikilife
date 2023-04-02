@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import UilLineAlt from 'svelte-unicons/src/icons/UilLineAlt.svelte';
-	import { Levels, type AppState, type GameModel } from '../../Game.svelte';
 	import badgesPng from '../assets/images/badges.png';
 	import gameBgAvif from '../assets/images/game-bg.avif';
 	import gameBgJpg from '../assets/images/game-bg.jpg';
 	import Display from '../components/Display.svelte';
 	import LangText from '../components/LangText.svelte';
 	import ZText from '../components/ZText.svelte';
+	import { Levels, type AppState, type GameModel } from '../Game.svelte';
 	import LevelPopup from '../popups/LevelPopup.svelte';
 	import TaskList from '../TaskList.svelte';
 

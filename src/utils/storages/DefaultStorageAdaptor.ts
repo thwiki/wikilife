@@ -20,7 +20,7 @@ export class DefaultStorageAdaptor implements StorageAdaptor {
 	}
 
 	overwrite(oldSave: { username: string; time: number }, newSave: { username: string; time: number }): boolean {
-		return newSave.time > oldSave.time || oldSave.username !== newSave.username;
+		return newSave.time > oldSave.time || (OnlineMode && oldSave.username !== newSave.username);
 	}
 
 	async from() {

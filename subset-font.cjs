@@ -74,6 +74,10 @@ const texts = {
 		zh: '登录以获取成就',
 		en: 'Login to Claim Achievements',
 	},
+	ImportSave: {
+		zh: '按此继续愚人节当天存档',
+		en: 'Click Here to Continue from April Fools Day Save',
+	},
 	Start: {
 		zh: '开始',
 		en: 'Start',

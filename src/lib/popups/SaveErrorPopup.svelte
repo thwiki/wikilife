@@ -4,8 +4,8 @@
 	import { initSeed } from '@utils/Random';
 	import { wait } from '@utils/Timing';
 	import { getContext } from 'svelte';
-	import type { AppState } from '../../Game.svelte';
-	import { AppStateSave } from '../../LoadSave.svelte';
+	import type { AppState } from '../Game.svelte';
+	import { AppStateSave } from '../LoadSave.svelte';
 
 	const { username } = getContext<AppState>('state');
 

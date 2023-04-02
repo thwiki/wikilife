@@ -1,4 +1,4 @@
-import type { AppStateSaveDto } from '../../LoadSave.svelte';
+import type { AppStateSaveDto } from '../../lib/LoadSave.svelte';
 
 export interface StorageAdaptor {
 	overwrite(oldSave: AppStateSaveDto, newSave: AppStateSaveDto): boolean;

@@ -1,11 +1,11 @@
 <script lang="ts" context="module">
 	import type { Random } from 'random';
 	import { get, writable } from 'svelte/store';
-	import SaveErrorPopup from './lib/popups/SaveErrorPopup.svelte';
-	import { TaskListModel } from './lib/TaskList.svelte';
+	import { forkSeed, fromSeed } from '../utils/Random';
+	import { wait } from '../utils/Timing';
 	import type { AppStateSave, AppStateSaveDto } from './LoadSave.svelte';
-	import { forkSeed, fromSeed } from './utils/Random';
-	import { wait } from './utils/Timing';
+	import SaveErrorPopup from './popups/SaveErrorPopup.svelte';
+	import { TaskListModel } from './TaskList.svelte';
 
 	export type Level = 0 | 1 | 2 | 3;
 	export interface LevelModel {
@@ -190,11 +190,11 @@
 </script>
 
 <script lang="ts">
-	import GamePage from './lib/pages/GamePage.svelte';
+	import GamePage from './pages/GamePage.svelte';
 
 	import { setContext, type ComponentProps } from 'svelte';
-	import Modal from './lib/popups/Modal.svelte';
-	import Popup from './lib/popups/Popup.svelte';
+	import Modal from './popups/Modal.svelte';
+	import Popup from './popups/Popup.svelte';
 
 	export let save: AppStateSave;
 	export let setSave: (obj: AppStateSaveDto) => Promise<boolean>;

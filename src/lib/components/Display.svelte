@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
-	import type { AppState, GameModel } from '../../Game.svelte';
+	import type { AppState, GameModel } from '../Game.svelte';
 	import { TaskComponentMap, type TaskModel } from '../tasks';
 	import LoadingTask from '../tasks/LoadingTask.svelte';
 

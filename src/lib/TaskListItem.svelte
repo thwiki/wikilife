@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { getContext } from 'svelte';
 	import { fly } from 'svelte/transition';
-	import type { AppState } from '../Game.svelte';
 	import LangText from './components/LangText.svelte';
+	import type { AppState } from './Game.svelte';
 	import type { TaskModel } from './tasks';
 
 	export let seed: TaskModel['seed'];

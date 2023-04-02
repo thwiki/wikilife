@@ -2,8 +2,9 @@
 	import { LocalStorageAdaptor } from '@utils/storages/LocalStorageAdaptor';
 	import type { StorageAdaptor } from '@utils/storages/StorageAdaptor';
 	import { onMount } from 'svelte';
-	import { DefaultStorageAdaptor } from './utils/storages/DefaultStorageAdaptor';
-	import { FetchStorageAdaptor } from './utils/storages/FetchStorageAdaptor';
+	import { DefaultStorageAdaptor } from '../utils/storages/DefaultStorageAdaptor';
+	import { FetchStorageAdaptor } from '../utils/storages/FetchStorageAdaptor';
+	import { UrlStorageAdaptor } from '../utils/storages/UrlStorageAdaptor';
 
 	type ExcludeMethods<T> = Pick<T, { [K in keyof T]: T[K] extends (..._: any) => any ? never : K }[keyof T]>;
 
@@ -19,7 +20,12 @@
 
 		time = 0;
 
-		static storages: StorageAdaptor[] = [new FetchStorageAdaptor(), new LocalStorageAdaptor(), new DefaultStorageAdaptor()];
+		static storages: StorageAdaptor[] = [
+			new FetchStorageAdaptor(),
+			new LocalStorageAdaptor(),
+			new UrlStorageAdaptor(),
+			new DefaultStorageAdaptor(),
+		];
 
 		validate(obj: unknown) {
 			if (obj == null || typeof obj !== 'object') return null;
